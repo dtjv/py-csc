@@ -39,8 +39,3 @@ class TestStack(unittest.TestCase):
 
         for i, item in enumerate(stack):
             self.assertEqual(item, i)
-
-
-
-
-
