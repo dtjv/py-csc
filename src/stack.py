@@ -25,4 +25,3 @@ class Stack:
         item = self.__private_store[0]
         self.__private_store = self.__private_store[1:]
         return item
-
