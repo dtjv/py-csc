@@ -22,6 +22,9 @@ class Stack:
         self.__private_store = [item, *self.__private_store]
 
     def pop(self):
-        item = self.__private_store[0]
-        self.__private_store = self.__private_store[1:]
+        if len(self.__private_store) == 0:
+            return None
+
+        item, self.__private_store = [self.__private_store[0],
+                                      self.__private_store[1:]]
         return item
