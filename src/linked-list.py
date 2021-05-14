@@ -42,6 +42,20 @@ class LinkedList:
 
         return self
 
+    def reverse(self) -> 'LinkedList':
+        def reverseR(node: Union[Node, None]) -> Union[Node, None]:
+            if node is None or node.next is None:
+                return node
+
+            newHead = reverseR(node.next)
+            node.next.next = node
+            node.next = None
+            return newHead
+
+        self.__head = reverseR(self.__head)
+
+        return self
+
     def print(self) -> None:
         ptr = self.__head
 
