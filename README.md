@@ -1,6 +1,6 @@
 # py-ds
 
-Data structures written in Python.
+Programming data structures in Python.
 
 ## Install
 
