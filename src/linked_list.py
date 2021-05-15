@@ -10,6 +10,16 @@ class Node:
 class LinkedList:
     __head: Union[Node, None] = None
 
+    def __len__(self) -> int:
+        count = 0
+        currNode = self.__head
+
+        while currNode is not None:
+            currNode = currNode.next
+            count += 1
+
+        return count
+
     def add(self, value: int) -> 'LinkedList':
         newNode = Node(value)
 
@@ -56,9 +66,15 @@ class LinkedList:
 
         return self
 
-    def print(self) -> None:
-        ptr = self.__head
+    def get_value_at_index(self, index: int) -> Union[int, None]:
+        currNode = self.__head
+        currIndex = 0
 
-        while ptr is not None:
-            print(ptr.value)
-            ptr = ptr.next
+        while currNode is not None:
+            if currIndex == index:
+                return currNode.value
+
+            currNode = currNode.next
+            currIndex += 1
+
+        return None
