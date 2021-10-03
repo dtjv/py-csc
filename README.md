@@ -1,32 +1,6 @@
-# py-ds
+# py-csc
 
-Programming data structures in Python.
-
-## Install
-
-```sh
-$ make install
-```
-
-## Commands
-
-### Format
-
-```sh
-$ make format
-```
-
-### Lint
-
-```sh
-$ make lint
-```
-
-### Test
-
-```sh
-$ make test
-```
+Programming fundamentals in Python.
 
 ## Author
 

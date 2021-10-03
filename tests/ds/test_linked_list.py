@@ -1,5 +1,5 @@
 import unittest
-from src.linked_list import LinkedList
+from src.ds.linked_list import LinkedList
 
 
 def setup():

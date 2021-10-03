@@ -1,4 +1,4 @@
-from src.stack import Stack
+from src.ds.stack import Stack
 
 
 class Queue:
