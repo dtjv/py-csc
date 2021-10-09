@@ -2,8 +2,10 @@ install:
 	python -m pip install --upgrade pip
 	if [ -f requirements.txt ]; then \
 		pip install -r requirements.txt; \
-		pre-commit install; \
 	fi
+
+precommit:
+	pre-commit install;
 
 test:
 	python -m unittest discover -s tests
